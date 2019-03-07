@@ -23,7 +23,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void setUpView() {
-
+//测试masterNew分支
     }
 
     @OnClick({R.id.tv_1, R.id.tv_2, R.id.tv_3, R.id.tv_4})
