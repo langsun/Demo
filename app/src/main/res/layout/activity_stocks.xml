@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_bar_right_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp">
+
+        <com.sun.demo.view.CustomTextView
+            android:id="@+id/ctv_tab1"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="种类"
+            android:textSize="15sp"
+            sun:bg_selected="@drawable/solid_e63232_15_shape"
+            sun:text_color_normal="@color/color_333333" />
+
+        <include layout="@layout/view_empty" />
+
+        <com.sun.demo.view.CustomTextView
+            android:id="@+id/ctv_tab2"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="库区"
+            android:textSize="15sp"
+            sun:bg_selected="@drawable/solid_e63232_15_shape"
+            sun:text_color_normal="@color/color_333333" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"></FrameLayout>
+
+
+</LinearLayout>
